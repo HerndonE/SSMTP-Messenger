@@ -69,7 +69,7 @@ foo@bar:~$ ssmtp recipient.address@some_domain.com < test.txt
 ```   
 
 **Added bonus**    
-Try texting from your computer to your phone! Look at link 3        
+Try texting from your computer to your phone! Look at link 3 for your carrier gateway            
 ```console
 foo@bar:~$ ssmtp 1234567890@smsgateway < test.txt
 ```  

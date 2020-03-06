@@ -77,7 +77,7 @@ foo@bar:~$ ssmtp 1234567890@smsgateway < test.txt
 # References
 Link 1. [How to send mail from command line using gmail smtp server](https://stackoverflow.com/questions/38391412/raspberry-pi-send-mail-from-command-line-using-gmail-smtp-server
 )    
-Link 2. [How to write a shell script] (https://vitux.com/how-to-write-a-shell-script-in-ubuntu/)    
+Link 2. [How to write a shell script](https://vitux.com/how-to-write-a-shell-script-in-ubuntu/)    
 Link 3. [SMS gateway lookup](https://en.wikipedia.org/wiki/SMS_gateway)    
 Link 4. [Cell phone lookup](https://www.spokeo.com/reverse-phone-lookup?g=phone_gs_bfree&campaignid=1814250205&adgroupid=70553735718&creative=344872239261&targetid=kwd-109356030&placement=&gclid=Cj0KCQiAqNPyBRCjARIsAKA-WFzNn2-wWRnofVmML69KbU-rKOqqAH2PDRCu0XjOvmMniAsEvSw2K-QaAojZEALw_wcB
 )

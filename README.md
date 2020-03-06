@@ -1,6 +1,6 @@
 # Instructions
 
-**Before you start, you need these platforms**    
+**Before you start, you need to have one of these platforms in place**    
 Platforms    
  Windows 10 using a Linux subsystem, Ubuntu, Linux, Raspberry Pi   
  
@@ -27,7 +27,7 @@ foo@bar:~$ sudo mv /etc/ssmtp/ssmtp.conf /etc/ssmtp/ssmtp.conf.bak
 ```console
 foo@bar:~$ sudo vi /etc/ssmtp/ssmtp.conf    
 ```
-In you file content, apply these changes    
+In your file content, apply these changes    
 ```shell
 root=your_account@gmail.com
 mailhub=smtp.gmail.com:587
@@ -54,7 +54,7 @@ Now lets create a text file to create some content for our message!
 ```console
 foo@bar:~$ nano test.txt
 ```    
-In you file content, apply these changes  
+In your file content, apply these changes  
 ```shell
 Hello 1 2 3 
 ```   
@@ -82,3 +82,10 @@ Link 3. [SMS gateway lookup](https://en.wikipedia.org/wiki/SMS_gateway)
 Link 4. [Cell phone lookup](https://www.spokeo.com/reverse-phone-lookup?g=phone_gs_bfree&campaignid=1814250205&adgroupid=70553735718&creative=344872239261&targetid=kwd-109356030&placement=&gclid=Cj0KCQiAqNPyBRCjARIsAKA-WFzNn2-wWRnofVmML69KbU-rKOqqAH2PDRCu0XjOvmMniAsEvSw2K-QaAojZEALw_wcB
 )
 
+# Terminology    
+1. What is **ssmtp**?    
+SSMTP is a send-only sendmail emulator for machines which normally pick their mail up from a centralized mailhub.    
+2. What is **mailutils**?    
+Mailutils is a _swiss army knife_ of electronic mail handling and offers a set of utilities and daemons for processing e-mail.    
+3. What is **postfix**?    
+Postfix is a free open-source mail transfer agent (MTA) that routes and delivers electronic mail.    

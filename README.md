@@ -73,6 +73,26 @@ Try texting from your computer to your phone! Look at link 3 for your carrier ga
 ```console
 foo@bar:~$ ssmtp 1234567890@smsgateway < test.txt
 ```  
+Try texting from your computer to your phone using shell!            
+```console
+foo@bar:~$ nano test.sh
+```    
+```bash 
+#!/bin/bash
+   ssmtp ssmtp 1234567890@smsgateway < test.txt
+   echo "Message sent" #prints in console/terminal
+```    
+Now enter    
+**ctrl o**     
+**y** to save your file     
+**ctrl x** to exit    
+```console
+foo@bar:~$ chmod 777 test.sh
+foo@bar:~$ ./test.sh
+Message sent
+foo@bar:~$
+```    
+
 
 # References
 Link 1. [How to send mail from command line using gmail smtp server](https://stackoverflow.com/questions/38391412/raspberry-pi-send-mail-from-command-line-using-gmail-smtp-server

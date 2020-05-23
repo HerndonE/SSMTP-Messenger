@@ -99,9 +99,9 @@ foo@bar:~$
 
 # <a name= "head12"></a> Weather    
 Take your SSMTP messaging skills a bit further using the [OpenWeatherMap API](https://openweathermap.org/api) ! After signing up for a free key
-you can use my [weatherapi.py]() script as a guide to get a weather report on your phone. The output for my code is  
+you can use my [weatherapi.py](https://github.com/HerndonE/SSMTP-Messenger/blob/master/Code/weatherapi.py) script as a guide to get a weather report on your phone. The output for my code is  
 <tr>
-<th align="center"><img src="" width="100px;" style="max-width:100%;"><sub><br><b>Weather Output</b></sub></a><br></th>
+<th align="center"><img src="https://github.com/HerndonE/SSMTP-Messenger/blob/master/Images/WeatherOutput.jpg" width="100px;" style="max-width:100%;"><sub><br><b>Weather Output</b></sub></a><br></th>
 </tr>
 
 # References

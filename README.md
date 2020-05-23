@@ -1,4 +1,8 @@
-# Instructions
+# Abstract    
+1. [Setup](#head1)    
+2. [Weather Messaging](#head12)
+
+# <a name= "head1"></a> Instructions
 
 **Before you start, you need to have one of these platforms in place**    
 Platforms    
@@ -93,6 +97,12 @@ Message sent
 foo@bar:~$
 ```    
 
+# <a name= "head12"></a> Weather    
+Take your SSMTP messaging skills a bit further using the [OpenWeatherMap API](https://openweathermap.org/api) ! After signing up for a free key
+you can use my [weatherapi.py]() script as a guide to get a weather report on your phone. The output for my code is  
+<tr>
+<th align="center"><img src="" width="100px;" style="max-width:100%;"><sub><br><b>Weather Output</b></sub></a><br></th>
+</tr>
 
 # References
 Link 1. [How to send mail from command line using gmail smtp server](https://stackoverflow.com/questions/38391412/raspberry-pi-send-mail-from-command-line-using-gmail-smtp-server

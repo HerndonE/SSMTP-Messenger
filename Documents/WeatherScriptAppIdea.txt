@@ -1,0 +1,30 @@
+
+ Weather Text Message
+ -------------------
+
+ Purpose: Send message at a time chosen by the user which will display 
+friendly information of the weather for that day. (daily weather report)
+
+ Details:  What will be displayed in the text message.
+  _____________________________
+ |                             |
+ | Hello "Your Name", Todays   | 
+ | weather will be...          |
+ |                             |
+ | Rainy, Sunny, Stormy, etc   |
+ | High Temp: 76F              |
+ | Low Temp: 34F               |
+ | Humidty: 2%                 |
+ | Barometer: 29.87 in         |
+ | Visibility: 10.00mi         |
+ |                             |
+ | Your information is proided |
+ | by National Weather Service |
+ |                             |
+ | Have a good day :)          |
+ |                             | 
+ |             O               |
+ |_____________________________|
+
+ Goal: Do it all in Bash, ideally using the Curl command. General
+jist, need to get the HTML variables and apply them into the Bash script. 

@@ -20,7 +20,7 @@ Before you start, you need to have at lease **one** of these platforms in place
 4. At the bottom of the page, select App passwords.
 5. Enter a name that helps you remember where you’ll use the app password.
 6. Select **Generate**.
-7. To enter the app password, follow the instructions on your screen. The app password is the 16-character code that will be used for your email password.
+7. To enter the app password, follow the instructions on your screen. The app password is the 16-character code that will be used for your email password in the python script.
 8. Select **Done**.   
 
 **3. Open up your terminal**    

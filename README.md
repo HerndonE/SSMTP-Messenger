@@ -1,21 +1,29 @@
-# Abstract    
+# SSMTP Messenger 📲
+A simple way for users to use a send-only sendmail emulator. 
+## Abstract    
 1. [Setup](#head1)    
 2. [Weather Messaging](#head12)
 
-# <a name= "head1"></a> Instructions
+## <a name= "head1"></a> Instructions
 
-**Before you start, you need to have one of these platforms in place**    
-Platforms    
- Windows 10 using a Linux subsystem, Ubuntu, Linux, Raspberry Pi   
- 
-**1. Google account setting**    
+**1. Operating System**  
+Before you start, you need to have at lease **one** of these platforms in place    
+1. Windows 10 using a Linux subsystem
+2. Ubuntu
+3. Linux
+4. Raspberry Pi 
+  
+**2. Google Account**    
 1. Login to your **Gmail** account
-2. Go to: **Settings** -> **Accounts and Import** -> **Other Google Account settings**    
-3. Go to: **Personal info & privacy** -> **Account overview**    
-4. Go to: **Sign-in & security** -> **Connect apps & sites**    
-5. Set option _Allow less secure apps_ to **ON**    
+2. Select **Security**.
+3. Under "_Signing in to Google_" select 2-Step Verification.
+4. At the bottom of the page, select App passwords.
+5. Enter a name that helps you remember where you’ll use the app password.
+6. Select **Generate**.
+7. To enter the app password, follow the instructions on your screen. The app password is the 16-character code that will be used for your email password.
+8. Select **Done**.   
 
-**2. Open up your terminal**    
+**3. Open up your terminal**    
 **Enter these commands below**   
 ```console 
 foo@bar:~$ sudo apt update && sudo apt upgrade    
@@ -23,11 +31,11 @@ foo@bar:~$ sudo apt-get install ssmtp mailutils
 foo@bar:~$ sudo apt-get install postfix   
 foo@bar:~$ sudo apt-get install ssmtp   
 ```
-**3. Save original conf file**      
+**4. Save original conf file**      
 ```console
 foo@bar:~$ sudo mv /etc/ssmtp/ssmtp.conf /etc/ssmtp/ssmtp.conf.bak    
 ```
-**4 . Create new conf file (with vi, or some other text editor)**    
+**5 . Create new conf file (with vi, or some other text editor)**    
 ```console
 foo@bar:~$ sudo vi /etc/ssmtp/ssmtp.conf    
 ```
@@ -49,7 +57,7 @@ Now enter
 **y** to save your file     
 **ctrl x** to exit       
 
-**5. Secure conf file**    
+**6. Secure conf file**    
 ```console
 foo@bar:~$ sudo groupadd ssmtp
 foo@bar:~$ sudo chown :ssmtp /etc/ssmtp/ssmtp.conf
@@ -67,7 +75,7 @@ Now enter
 **y** to save your file     
 **ctrl x** to exit   
  
-**6. Last but not least, the test!**    
+**7. Last but not least, the test!**    
 ```console
 foo@bar:~$ ssmtp recipient.address@some_domain.com < test.txt
 ```   
@@ -97,22 +105,22 @@ Message sent
 foo@bar:~$
 ```    
 
-# <a name= "head12"></a> Weather    
-Take your SSMTP messaging skills a bit further using the [OpenWeatherMap API](https://openweathermap.org/api) ! After signing up for a free key
+## <a name= "head12"></a> Weather    
+Take your SSMTP messaging skills a bit further using the [OpenWeatherMap API](https://openweathermap.org/api)! After signing up for a free key,
 you can use my [weatherapi.py](https://github.com/HerndonE/SSMTP-Messenger/blob/master/Code/weatherapi.py) script as a guide to get a weather report on your phone. The output for my code is  
 <tr>
 <th align="center"><img src="https://github.com/HerndonE/SSMTP-Messenger/blob/master/Images/WeatherOutput.jpg" width="100px;" style="max-width:100%;"><sub><br><b>Weather Output</b></sub></a><br></th>
 </tr>
 
-# References
-Link 1. [How to send mail from command line using gmail smtp server](https://stackoverflow.com/questions/38391412/raspberry-pi-send-mail-from-command-line-using-gmail-smtp-server
+## References
+[How to send mail from command line using gmail smtp server](https://stackoverflow.com/questions/38391412/raspberry-pi-send-mail-from-command-line-using-gmail-smtp-server
 )    
-Link 2. [How to write a shell script](https://vitux.com/how-to-write-a-shell-script-in-ubuntu/)    
-Link 3. [SMS gateway lookup](https://en.wikipedia.org/wiki/SMS_gateway)    
-Link 4. [Cell phone lookup](https://www.spokeo.com/reverse-phone-lookup?g=phone_gs_bfree&campaignid=1814250205&adgroupid=70553735718&creative=344872239261&targetid=kwd-109356030&placement=&gclid=Cj0KCQiAqNPyBRCjARIsAKA-WFzNn2-wWRnofVmML69KbU-rKOqqAH2PDRCu0XjOvmMniAsEvSw2K-QaAojZEALw_wcB
+[How to write a shell script](https://vitux.com/how-to-write-a-shell-script-in-ubuntu/)    
+[SMS gateway lookup](https://en.wikipedia.org/wiki/SMS_gateway)    
+[Cell phone lookup](https://www.spokeo.com/reverse-phone-lookup?g=phone_gs_bfree&campaignid=1814250205&adgroupid=70553735718&creative=344872239261&targetid=kwd-109356030&placement=&gclid=Cj0KCQiAqNPyBRCjARIsAKA-WFzNn2-wWRnofVmML69KbU-rKOqqAH2PDRCu0XjOvmMniAsEvSw2K-QaAojZEALw_wcB
 )
 
-# Terminology    
+## Terminology    
 1. What is **ssmtp**?    
 SSMTP is a send-only sendmail emulator for machines which normally pick their mail up from a centralized mailhub.    
 2. What is **mailutils**?    

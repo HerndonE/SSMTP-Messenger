@@ -24,8 +24,8 @@ def weather_print(message, sender_email, sender_password, end_user):
     mail = smtplib.SMTP('smtp.gmail.com', 587)
     mail.ehlo()
     mail.starttls()
-    mail.login(f"{sender_email}", f"{sender_password}")
-    mail.sendmail(f"{sender_email}", f"{end_user}", message)
+    mail.login(sender_email, sender_password)
+    mail.sendmail(sender_email, end_user, message)
     mail.close()
 
 

@@ -15,10 +15,13 @@ Before you start, you need to have at lease **one** of these platforms in place
   
 **2. Google Account**    
 1. Login to your **Gmail** account
-2. Go to: **Settings** -> **Accounts and Import** -> **Other Google Account settings**    
-3. Go to: **Personal info & privacy** -> **Account overview**    
-4. Go to: **Sign-in & security** -> **Connect apps & sites**    
-5. Set option _Allow less secure apps_ to **ON**    
+2. Select **Security**.
+3. Under "_Signing in to Google_" select 2-Step Verification.
+4. At the bottom of the page, select App passwords.
+5. Enter a name that helps you remember where you’ll use the app password.
+6. Select **Generate**.
+7. To enter the app password, follow the instructions on your screen. The app password is the 16-character code that will be used for your email password.
+8. Select **Done**.   
 
 **3. Open up your terminal**    
 **Enter these commands below**   
